@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Metaverse Survery Form</title>
+</head>
+<body> 
+
+    <div class="survery-container">
+        <div class="title-header-controller">
+            <h1 id="title" class="title">MetaVerse Survery Form</h1>
+            <p id="description" class="p-text-description">
+               Thank you for taking the time to help us improve the platform
+            </p> 
+        </div>
+
+        <section class="form-container">
+            <form class="survery-form" action="form" id="survery-form">
+
+                    <label id="name-label" class="name main-header-form" for="name"> Name
+                        <input placeholder="Enter your name" required autofocus type="text" id="name-input" class="name-input">
+                    </label>
+                    <label id="email-label" class="email main-header-form" for="email"> Email
+                        <input  placeholder="Enter your email" required autofocus type="email" id="name-input" class="name-input">
+                    </label>
+                    <label id="number-label" class="number main-header-form" for="Age"> Age
+                        <input  placeholder="Enter your Age" min="1" max="100" required autofocus type="number" id="name-input" class="name-input">
+                    </label>
+
+
+                <div class="form-option-group-1">
+                    <label class="drop-title" for="dropdown">Which option best describes your current role?</label>
+                    <select id="dropdown" class="dropdown-menu">
+                        <option value="Student">Select current role</option>
+                        <option value="Student">Student</option>
+                        <option value="Freelance">Freelance</option>
+                        <option value="Full-Time-Job">Full-Time-Job</option>
+                        <option value="Remote">Remote</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                <div class="form-radio-btn-group">
+                    <p>Would you recommend Metaverse to a friend?</p>
+                    <label for="">
+                        <input checked name="user-recommand-selection"  value="Definitely" type="radio" class="radio-btn">
+                        Definitely
+                    </label>
+                    <label for="">
+                        <input checked name="user-recommand-selection"  value="May Be" type="radio" class="radio-btn">
+                        May Be
+                    </label>
+                    <label for="">
+                        <input checked name="user-recommand-selection"  value="Not Sure" type="radio" class="radio-btn">
+                        Not Sure
+                    </label>
+                </div>
+
+                <div class="form-option-group-2">
+                    <label for="dropdown">What is your favorite feature of MetaVerse?</label>
+                    <select id="dropdown" class="dropdown-menu">
+                        <option value="Student">Select an option</option>
+                        <option value="Student">Challenges</option>
+                        <option value="Freelance">Projects</option>
+                        <option value="Full-Time-Job">Open Source</option>
+                        <option value="Remote">Community</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-check-btn-group">
+                    <p>What would you like to see improved?</p>
+                   <div class="form-check-btn-1">
+                    <label for="">
+                        <input type="checkbox" value="Front-End-Projects" name="prefer" class="input-check-btn">
+                        Front-End-Projects
+                    </label>
+                    <br>
+                    <label for="">
+                        <input type="checkbox" value="DataScience" name="prefer" class="input-check-btn">
+                        DataScience
+                    </label>
+                    <br>
+                    <label for="">
+                        <input type="checkbox" value="Cyber Security" name="prefer" class="input-check-btn">
+                        Cyber Security
+                    </label>
+                    <br>
+                    <label for="">
+                        <input type="checkbox" value="Interview Questions" name="prefer" class="input-check-btn">
+                        Interview Questions
+                    </label>
+                    <br>
+                    <label for="">
+                        <input type="checkbox" value="Front-End-Projects" name="prefer" class="input-check-btn">
+                        Front-End Projects
+                    </label>
+                    <br>
+                    <label for="">
+                        <input type="checkbox" value="Back-End-Projects" name="prefer" class="input-check-btn">
+                        Back-End Projects
+                    </label>
+                    <br>
+                   </div>
+
+
+                  <div class="form-check-btn-2">
+                    <label for="">
+                        <input type="checkbox" value="Data Visualization" name="prefer" class="input-check-btn">
+                        Data Visualization
+                    </label>
+                    <br>
+                    <label for="">
+                        <input type="checkbox" value="Challenges" name="prefer" class="input-check-btn">
+                        Challenges
+                    </label>
+                    <br>
+                    <label for="">
+                        <input type="checkbox" value="Open-Source-Community" name="prefer" class="input-check-btn">
+                        Open-Source-Community
+                    </label>
+                    <br>
+                    <label for="">
+                        <input type="checkbox" value="Virtual World" name="prefer" class="input-check-btn">
+                        Virtual World
+                    </label>
+                    <br>
+                    <label for="">
+                        <input type="checkbox" value="Full-Stack-Projects" name="prefer" class="input-check-btn">
+                        Full-Stack-Projects
+                    </label>
+                    <br>
+                    <label for="">
+                        <input type="checkbox" value="Linux Server Administration" name="prefer" class="input-check-btn">
+                        Linux Server Administration
+                    </label>
+                    
+                  </div>
+
+                    
+                </div>
+
+                <div class="form-submit-btn-group">
+                    <p class="submit-text">Any comments or suggestions?</p>
+                  <div class="text-area-form">
+                    <textarea  class="text-area" placeholder="Enter your comment here...." autofocus name="textarea"id="comments" cols="30" rows="10">
+                    </textarea>
+                  </div>
+                  <input class="submit-btn" id="submit" value="submit" type="submit">
+                </div>
+            </form>
+        </section>
+   </div>
+    
+</body>
+</html>
